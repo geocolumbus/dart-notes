@@ -22,7 +22,7 @@ For other IDE's go [here](https://medium.com/cloud-native-the-gathering/what-is-
     
 ### Run the examples
 
-    dart src/main.dart
+    dart src/{file name}
         
 ## Reference
 
