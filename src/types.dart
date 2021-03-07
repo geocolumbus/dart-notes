@@ -1,9 +1,39 @@
-main() {
-  var name = "George"; // type is inferred as String, must be String throughout
-  dynamic thing = 21;  // thing can hold any type
-  var notInitialized;  // variable is not initialized after declaration
-  print(notInitialized == null); // true
+import 'dart:math';
 
-  final myFin = "Can only define once. Value is inserted at run time.";
-  const myCon = "Can only define once. Value inserted at compile time.";
+main() {
+  int maxInt = pow(2, 63) - 1;
+  int minInt = -pow(2, 63);
+  print("maxInt = $maxInt, minInt $minInt");
+
+  int aInt = int.parse("123", radix: 10); // => 123 (radix 2..36)
+  // int bInt = int.parse("George", radix:10 ); // => FormatException
+  int cInt = int.tryParse("George", radix: 10); // => null
+  print("aInt = $aInt, cInt = $cInt");
+
+  double maxDouble = double.maxFinite;
+  double minDouble = double.minPositive;
+  print("minDouble = $minDouble, maxDouble = $maxDouble");
+
+  double aDouble = double.tryParse("2.34e-23");
+  print("aDouble = $aDouble");
+
+  bool myTrue = true;
+  bool myFalse = false;
+
+  print("myTrue = $myTrue, myFalse = $myFalse");
+
+  var list = [1, 2, 3];
+  print("list = $list");
+
+  var set = {'Pennsylvania', 'New York Central', 'Chesapeake and Ohio'};
+  print("set = $set");
+
+  var map = {'name': 'George', 'location': 'Worthington'};
+  print("map = $map");
+
+  var rune = 'Hi 🇩🇰';
+  print("rune = $rune");
+
+  var symbol = #george;
+  print("symbol = $symbol");
 }

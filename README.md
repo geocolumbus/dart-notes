@@ -9,6 +9,8 @@ The Dart programming language is used for the Flutter multi-platform development
     brew tap dart-lang/dart
     brew install dart
     
+    # Dart 2.10.4 as of 3/6/21
+    
 ### Configure your IDE
 
 For Android Studio and/or IntelliJ, go [here](https://flutter.dev/docs/development/tools/android-studio).
@@ -22,9 +24,28 @@ For other IDE's go [here](https://medium.com/cloud-native-the-gathering/what-is-
     
 ### Run the examples
 
-    dart src/{file name}
+    dart run src/{file name}
+   
+## Notes   
+    
+### Keywords
+
+```
+abstract        covariant       factory         in              return          typedef
+as              default         false           interface       set             var
+assert          deferred        final           is              show            void
+async           do              finally         library         static          while
+await           dynamic         for             mixin           super           with
+break           else            Function        new             switch          yield
+case            enum            get             null            sync
+catch           export          hide            on              this
+class           extends         if              operator        throw
+const           extension       implements      part            true
+continue        external        import          rethrow         try
+```
         
 ## Reference
 
-* https://dart.dev/
-* https://flutter.dev/
+* DART Home - https://dart.dev/
+* DART Docs - https://dart.dev/guides
+* Flutter Home - https://flutter.dev/
