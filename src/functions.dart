@@ -3,8 +3,19 @@ void printInteger(int aNumber) {
   print('The number is $aNumber.'); // Print to console.
 }
 
+String myConcat(var a, var b) {
+  return a + b;
+}
+
 // This is where the app starts executing.
 void main() {
-  var number = 42; // Declare and initialize a variable.
-  printInteger(number); // Call a function.
+  // Function call
+  String a = myConcat("eggs ", "is eggs");
+  print("myConcat returned \"$a\"");
+
+  // Anonymous functions
+  var list = ['apples', 'bananas', 'oranges'];
+  list.forEach((item) {
+    print('${list.indexOf(item)}: $item');
+  });
 }

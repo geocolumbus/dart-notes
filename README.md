@@ -9,7 +9,7 @@ The Dart programming language is used for the Flutter multi-platform development
     brew tap dart-lang/dart
     brew install dart
     
-    # Dart 2.10.4 as of 3/6/21
+    # Dart 2.12.0 as of 3/7/21
     
 ### Configure your IDE
 
