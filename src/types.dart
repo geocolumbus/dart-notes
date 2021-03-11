@@ -31,6 +31,11 @@ main() {
   var list = [1, 2, 3];
   print("list = $list");
 
+  List list1 = <int>[];
+  list1.add(3);
+  list1.add(5);
+  print("list1 = $list1");
+
   var set = {'Pennsylvania', 'New York Central', 'Chesapeake and Ohio'};
   print("set = $set");
 
